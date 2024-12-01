@@ -1,0 +1,27 @@
+rieyana@RienoMacBook-Air ~ % cd desktop
+rieyana@RienoMacBook-Air desktop % mkdir git_challenge
+rieyana@RienoMacBook-Air desktop % cd git_challenge
+rieyana@RienoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/rieyana/Desktop/git_challenge/.git/
+rieyana@RienoMacBook-Air git_challenge % ls -a
+.       ..      .git
+rieyana@RienoMacBook-Air git_challenge % touch hello_world.txt
+rieyana@RienoMacBook-Air git_challenge % echo 'Hello, world!' >> hello_world.txt
+rieyana@RienoMacBook-Air git_challenge % cat hello_world.txt
+Hello, world!
+rieyana@RienoMacBook-Air git_challenge % git add hello_world.txt
+rieyana@RienoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) 0ffbbf8] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+rieyana@RienoMacBook-Air git_challenge % echo "こんにちは、世界！" >> hello_world.txt
+rieyana@RienoMacBook-Air git_challenge % cat hello_world.txt
+Hello, world!
+こんにちは、世界！
+rieyana@RienoMacBook-Air git_challenge % git add .
+rieyana@RienoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[main 20cdea1] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+rieyana@RienoMacBook-Air git_challenge % git log --oneline
+20cdea1 (HEAD -> main) 日本語訳を追記
+0ffbbf8 hello_world.txtを追加
